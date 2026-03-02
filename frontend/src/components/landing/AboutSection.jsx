@@ -59,7 +59,7 @@ const AboutSection = () => {
       <div className="absolute top-[5%] left-0 overflow-x-hidden overflow-y-clip">
         <img ref={leaf1Ref} src={leaf1} alt="" className="h-96 object-cover" />
       </div>
-      <div className="absolute bottom-[5%] right-0 overflow-x-hidden overflow-y-hidden">
+      <div className="absolute bottom-[5%] right-0 overflow-x-hidden overflow-y-clip">
         <img ref={leaf2Ref} src={leaf2} alt="" className="h-76 object-cover" />
       </div>
 
