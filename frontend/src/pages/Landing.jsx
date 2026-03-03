@@ -6,6 +6,7 @@ import { ReactLenis, useLenis } from "lenis/react";
 import ActivitiesSection from "../components/landing/ActivitiesSection";
 import TestimonialsSection from "../components/landing/TestimonialsSection";
 import FinalSection from "../components/landing/FinalSection";
+import Footer from "../components/landing/Footer";
 
 const Landing = () => {
   const lenis = useLenis((lenis) => {
@@ -21,6 +22,7 @@ const Landing = () => {
         <ActivitiesSection />
         <TestimonialsSection />
         <FinalSection />
+        <Footer />
       </div>
     </>
   );

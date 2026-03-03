@@ -5,3 +5,25 @@
   --font-cinzel: "Cinzel", serif;
   --font-lexend: "Lexend", sans-serif;
 }
+
+::selection {
+  background-color: #d4e8a4;
+  color: #1a241c;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a241c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e5443;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8fa88e;
+}

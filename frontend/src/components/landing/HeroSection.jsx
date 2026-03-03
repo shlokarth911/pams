@@ -73,17 +73,17 @@ const HeroSection = () => {
     tl.to(heroTextRef.current, {
       opacity: 1,
       y: "0%",
-      duration: 1,
-      delay: -0.7,
-      ease: "power4.inOut",
+      duration: 1.2,
+      delay: -1.2,
+      ease: "power4.out",
     });
 
     tl.to(heroTextRef2.current, {
       opacity: 1,
       y: "0%",
-      duration: 1,
-      delay: -0.7,
-      ease: "power4.inOut",
+      duration: 1.2,
+      delay: -0.9,
+      ease: "power4.out",
     });
   }, []);
 
@@ -97,53 +97,51 @@ const HeroSection = () => {
           className="h-[0%] w-[80%] object-cover brightness-55 absolute top-[60%] left-[50%] -translate-x-1/2 -translate-y-1/2"
         />
 
-        <div className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div className="relative">
-            <div className=" h-18 w-18 absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rounded-full  overflow-hidden flex items-center justify-center hover:scale-110 transition-transform duration-300">
-              <Sparkle color="white" size={50} />
+        <div className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full px-4">
+          <div className="relative mb-6">
+            <div className="h-20 w-20 absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden flex items-center justify-center hover:scale-110 transition-transform duration-500 cursor-pointer">
+              <Sparkle color="#D4E8A4" size={44} strokeWidth={1} />
             </div>
 
             <CircularText
               text="PAMS•PAMS•PAMS•PAMS•"
               onHover="speedUp"
-              spinDuration={20}
-              className="custom-class scale-75 font-lexend font-semibold"
+              spinDuration={25}
+              className="custom-class scale-[0.6] font-lexend font-semibold text-[#D4E8A4]"
             />
           </div>
 
           <h1
             ref={heroTextRef}
-            className="font-cinzel text-9xl font-bold text-[#a8f3c5]  text-center opacity-0 transform -translate-y-[-10%]"
+            className="font-cinzel text-5xl md:text-8xl lg:text-9xl font-bold text-[#D4E8A4] text-center opacity-0 transform translate-y-12 tracking-wide lg:tracking-widest"
           >
             FEEL THE ADVENTURE
           </h1>
           <p
             ref={heroTextRef2}
-            className="font-lexend text-lg font-semibold text-white text-center tracking-wider mt-5 opacity-0 transform -translate-y-10"
+            className="font-lexend text-sm md:text-base lg:text-lg font-light text-[#F5F9E9] text-center tracking-[0.2em] mt-6 opacity-0 transform translate-y-8 max-w-2xl mx-auto"
           >
-            WITH PATRATOO AQUA MASTI SPORTS PRIVATE LIMITED
+            WITH PATRATOO AQUA MASTI SPORTS
           </p>
 
-          <div className="w-full flex items-center justify-center mt-5">
+          <div className="w-full flex items-center justify-center mt-12">
             <button
-              onMouseEnter={() => {
-                setIsHovered(true);
-              }}
-              onMouseLeave={() => {
-                setIsHovered(false);
-              }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
               ref={mainButtonRef}
-              className={`bg-neutral-50/10 relative text-[#36453B] px-6 py-2  font-lexend font-semibold backdrop-blur-sm border border-neutral-50/50`}
+              className={`bg-white/5 relative text-white px-8 py-3 font-lexend font-semibold backdrop-blur-md border border-white/20 rounded-full hover:border-[#D4E8A4]/50 transition-colors duration-500 overflow-hidden cursor-pointer`}
             >
               <span
                 ref={buttonTextRef}
-                className="text-amber-50 text-xl z-20 relative font-lexend"
+                className="text-[#D4E8A4] text-lg tracking-wider z-20 relative font-lexend transition-colors"
+                style={{ color: isHovered ? "#1A241C" : "#D4E8A4" }}
               >
-                Explore
+                EXPLORE NOW
               </span>
               <div
                 ref={buttonOverlayRef}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2   bg-[#F5F9E9] z-10 origin-center "
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#D4E8A4] z-10 origin-center rounded-full"
+                style={{ width: "0%", height: "0%" }}
               ></div>
             </button>
           </div>
