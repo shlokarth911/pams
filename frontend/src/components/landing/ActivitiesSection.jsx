@@ -74,7 +74,7 @@ const ActivitiesSection = () => {
   return (
     <div
       ref={containerRef}
-      className="min-h-screen relative w-full bg-[#F5F9E9] py-24 px-8 overflow-hidden"
+      className="min-h-screen relative w-full bg-[#F5F9E9] py-24 px-8 overflow-hidden "
     >
       <div className="text-center relative z-20">
         <h1

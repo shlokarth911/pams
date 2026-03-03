@@ -47,7 +47,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full relative">
+    <div className="min-h-screen w-full relative max-w-screen overflow-hidden">
       <div className="absolute top-0 left-0 h-full w-full overflow-hidden ">
         <img
           src={aboutImage}
