@@ -113,7 +113,7 @@ const HeroSection = () => {
 
           <h1
             ref={heroTextRef}
-            className="font-cinzel text-5xl md:text-8xl lg:text-9xl font-bold text-[#D4E8A4] text-center opacity-0 transform translate-y-12 tracking-wide lg:tracking-widest max-w-[80%] mx-auto"
+            className="font-cinzel text-5xl md:text-8xl lg:text-9xl font-bold text-[#D4E8A4] text-center opacity-0 transform translate-y-12 tracking-wide lg:tracking-widest lg:max-w-[80%] mx-auto"
           >
             FEEL THE ADVENTURE
           </h1>
