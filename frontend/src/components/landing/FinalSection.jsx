@@ -115,23 +115,33 @@ const FinalSection = () => {
   }, []);
 
   return (
-    <div className=" w-full relative bg-[#DBDBCA] py-22">
-      <h1 className="font-lexend text-5xl text-[#304222] mt-6 text-center tracking-tighter font-semibold mx-auto">
+    <div className="w-full relative bg-[#DBDBCA] py-16 md:py-22 overflow-hidden px-4 md:px-0">
+      <h1 className="font-lexend text-3xl md:text-5xl lg:text-6xl text-[#304222] mt-6 text-center tracking-tighter font-semibold max-w-4xl mx-auto relative z-20">
         READY TO EXPERIENCE THE BEST?
       </h1>
 
-      <div className="absolute top-[50%] transform -translate-y-1/2 left-0 overflow-x-hidden overflow-y-clip">
-        <img ref={leaf1Ref} src={leaf1} alt="" className="h-76 object-cover" />
+      <div className="absolute top-[50%] transform -translate-y-1/2 -left-10 md:left-0 overflow-x-hidden overflow-y-clip pointer-events-none opacity-30 md:opacity-100 z-10">
+        <img
+          ref={leaf1Ref}
+          src={leaf1}
+          alt=""
+          className="h-40 md:h-60 lg:h-76 object-cover"
+        />
       </div>
-      <div className="absolute top-[50%] transform -translate-y-1/2 right-0 overflow-x-hidden overflow-y-clip">
-        <img ref={leaf2Ref} src={leaf3} alt="" className="h-76 object-cover" />
+      <div className="absolute top-[50%] transform -translate-y-1/2 -right-10 md:right-0 overflow-x-hidden overflow-y-clip pointer-events-none opacity-30 md:opacity-100 z-10">
+        <img
+          ref={leaf2Ref}
+          src={leaf3}
+          alt=""
+          className="h-40 md:h-60 lg:h-76 object-cover"
+        />
       </div>
 
-      <div className="flex items-center justify-center mt-16">
-        <div className="px-7 border-r border-[#111] py-6">
+      <div className="flex flex-col md:flex-row items-center justify-center mt-12 md:mt-16 gap-4 md:gap-0 relative z-20">
+        <div className="px-7 md:border-r border-[#111] py-2 md:py-6 w-full md:w-auto flex justify-center border-b md:border-b-0">
           <AnimatedButton>Create a Booking</AnimatedButton>
         </div>
-        <div className="px-7 border-l border-[#111] py-6">
+        <div className="px-7 md:border-l border-[#111] py-2 md:py-6 w-full md:w-auto flex justify-center">
           <AnimatedButton>Explore Activities</AnimatedButton>
         </div>
       </div>

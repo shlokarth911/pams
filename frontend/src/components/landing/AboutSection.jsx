@@ -52,15 +52,25 @@ const AboutSection = () => {
         <img
           src={aboutImage}
           alt="about-wallpaper"
-          className="h-full w-full object-cover blur-sm scale-125"
+          className="h-full w-full object-cover blur-sm md:scale-125"
         />
       </div>
 
-      <div className="absolute top-[5%] left-0 overflow-x-hidden overflow-y-clip">
-        <img ref={leaf1Ref} src={leaf1} alt="" className="h-96 object-cover" />
+      <div className="absolute top-[5%] -left-10 md:left-0 overflow-x-hidden overflow-y-clip pointer-events-none opacity-40 md:opacity-100 z-10 w-1/2 md:w-auto">
+        <img
+          ref={leaf1Ref}
+          src={leaf1}
+          alt=""
+          className="h-48 md:h-96 object-cover"
+        />
       </div>
-      <div className="absolute bottom-[5%] right-0 overflow-x-hidden overflow-y-clip">
-        <img ref={leaf2Ref} src={leaf2} alt="" className="h-76 object-cover" />
+      <div className="absolute bottom-[5%] -right-10 md:right-0 overflow-x-hidden overflow-y-clip pointer-events-none opacity-40 md:opacity-100 z-10 w-1/2 md:w-auto flex justify-end">
+        <img
+          ref={leaf2Ref}
+          src={leaf2}
+          alt=""
+          className="h-40 md:h-76 object-cover"
+        />
       </div>
 
       <div
