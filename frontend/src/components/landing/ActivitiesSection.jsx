@@ -2,7 +2,8 @@ import React, { useRef } from "react";
 import ActivityCard from "../ui/ActivityCard";
 import leafShadow from "../../assets/leaf-shadow.png";
 import boatingImage from "../../assets/showcase/boating.jpeg";
-import kayakingImage from "../../assets/showcase/kyaking.jpg";
+import kayakingImage from "../../assets/showcase/kyaking.jpeg";
+import speedBoatingImage from "../../assets/showcase/speedboating.jpeg";
 import jetSkiImage from "../../assets/showcase/jet-ski.jpeg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -60,10 +61,10 @@ const ActivitiesSection = () => {
       title: "Boating",
       img: boatingImage,
     },
-    // {
-    //   title: "Speed Boating",
-    //   img: speedBoatingImage,
-    // },
+    {
+      title: "Speed Boating",
+      img: speedBoatingImage,
+    },
     {
       title: "Jet Ski",
       img: jetSkiImage,
