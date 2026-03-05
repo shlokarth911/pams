@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import heroImage from "../../assets/hero-image.jpg";
+import heroImage from "../../assets/showcase/hero-image-1.jpeg";
 import Button from "../ui/Button";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";

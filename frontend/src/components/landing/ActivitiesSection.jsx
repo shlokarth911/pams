@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
 import ActivityCard from "../ui/ActivityCard";
 import leafShadow from "../../assets/leaf-shadow.png";
+import boatingImage from "../../assets/showcase/boating.jpeg";
+import speedBoatingImage from "../../assets/showcase/speedboating.jpg";
+import jetSkiImage from "../../assets/showcase/jet-ski.jpeg";
+import kayakingImage from "../../assets/showcase/kyaking.jpg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -55,19 +59,19 @@ const ActivitiesSection = () => {
   const activities = [
     {
       title: "Boating",
-      img: "https://www.nandankanan.org/images/boating-2.jpg",
+      img: boatingImage,
     },
     {
       title: "Speed Boating",
-      img: "https://www.boatbookingindia.com/portfolio/gallery/sea_ray_300/sea_ray_300_1.jpg",
+      img: speedBoatingImage,
     },
     {
       title: "Jet Ski",
-      img: "https://crazysistermarina.com/wp-content/uploads/sites/6454/2024/04/Jet-Ski-Excursion.jpg?w=700&h=700&zoom=1",
+      img: jetSkiImage,
     },
     {
-      title: "Fishing",
-      img: "https://www.fishverify.com/wp-content/uploads/2022/03/ryan-arnst-JtRXnUNWHt4-unsplash-800x400.jpg",
+      title: "Kayaking",
+      img: kayakingImage,
     },
   ];
 

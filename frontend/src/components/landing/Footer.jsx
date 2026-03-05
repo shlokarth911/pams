@@ -79,10 +79,13 @@ const Footer = () => {
             GET IN TOUCH
           </h3>
           <p className="text-[#8FA88E] text-sm md:text-base mb-1.5 hover:text-[#D4E8A4] transition-colors duration-300 cursor-pointer">
-            pasms@email.com
+            [EMAIL_ADDRESS]
           </p>
           <p className="text-[#8FA88E] text-sm md:text-base hover:text-[#D4E8A4] transition-colors duration-300 cursor-pointer">
-            +91 123 456 7890
+            +91 980 124 1143
+          </p>
+          <p className="text-[#8FA88E] text-sm md:text-base hover:text-[#D4E8A4] transition-colors duration-300 cursor-pointer">
+            +91 926 225 2085
           </p>
         </div>
 
@@ -92,12 +95,12 @@ const Footer = () => {
             FIND US
           </h3>
           <p className="text-[#8FA88E] text-sm md:text-base mb-1.5 max-w-[260px]">
-            Address, Patratoo, Ranchi,
+            Patratoo, Ranchi,
             <br />
             Jharkhand
           </p>
           <a
-            href="https://maps.google.com"
+            href="https://maps.app.goo.gl/widKGWYDJEBxejLk9"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[#8FA88E] text-sm md:text-base mt-3 group hover:text-[#D4E8A4] transition-colors duration-300"
@@ -126,9 +129,9 @@ const Footer = () => {
           </h3>
           <div className="flex flex-col gap-2">
             {[
-              { name: "Instagram", url: "#" },
-              { name: "Facebook", url: "#" },
-              { name: "WhatsApp", url: "#" },
+              // { name: "Instagram", url: "#" },
+              // { name: "Facebook", url: "#" },
+              { name: "WhatsApp", url: "https://wa.me/919471589395" },
             ].map((social) => (
               <a
                 key={social.name}
@@ -186,7 +189,7 @@ const Footer = () => {
           {["AMENITIES", "FAQs", "CONTACT US"].map((link, index) => (
             <a
               key={link}
-              href={`#${link.toLowerCase().replace(/\s/g, "-")}`}
+              href={`${link.toLowerCase().replace(/\s/g, "-")}`}
               ref={(el) => (linksRef.current[index] = el)}
               className="text-[#D4E8A4] font-cinzel text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider hover:text-[#F5F9E9] transition-colors duration-300 relative group"
             >
