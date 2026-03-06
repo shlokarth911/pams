@@ -14,8 +14,8 @@ const FullScreenMenu = ({ isOpen, setIsOpen }) => {
   const [hoveredIdx, setHoveredIdx] = useState(null);
 
   const navLinks = [
+    { title: "HOME", href: "/" },
     { title: "OUR STORY", href: "/story" },
-    { title: "AMENITIES", href: "/amenities" },
     { title: "ACTIVITIES", href: "/activities" },
     { title: "GALLERY", href: "/gallery" },
     { title: "ENQUIRE", href: "/enquire" },
